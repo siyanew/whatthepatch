@@ -250,7 +250,6 @@ def parse_git_header(text):
     # if we go through all of the text without finding our normal info,
     # use the cmd if available
     if cmd_old_path and cmd_new_path and old_version and new_version:
-        print("returning from dumb path")
         if cmd_old_path.startswith('a/'):
             cmd_old_path = cmd_old_path[2:]
 
